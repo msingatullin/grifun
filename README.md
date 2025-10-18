@@ -1,36 +1,165 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ЛОтос - Лендинг видеонаблюдения
 
-## Getting Started
+Современный лендинг для компании "ЛОтос" - профессиональные системы видеонаблюдения и СКС ЛВС в Рязани.
 
-First, run the development server:
+## 🚀 Технологии
 
+- **Next.js 14** - React фреймворк с App Router
+- **TypeScript** - Типизированный JavaScript
+- **Tailwind CSS** - Utility-first CSS фреймворк
+- **Framer Motion** - Анимации и переходы
+- **Vercel AI SDK** - Интеграция с OpenAI GPT-4
+- **Resend API** - Отправка email
+- **Radix UI** - Доступные UI компоненты
+
+## 🎨 Дизайн
+
+- **Темная тема** с кибер-стилем
+- **Glassmorphism** эффекты
+- **Градиенты** и свечение
+- **Mobile-first** подход
+- **Анимации** при скролле
+
+## 📱 Функциональность
+
+### Основные секции:
+- ✅ Hero секция с CTA
+- ✅ Преимущества (3 карточки)
+- ✅ Решаемые проблемы (4 проблемы)
+- ✅ Процесс работы (4 шага)
+- ✅ Портфолио (6 проектов)
+- ✅ Тарифы (3 плана)
+- ✅ Отзывы клиентов
+- ✅ FAQ (6 вопросов)
+- ✅ Форма контактов
+- ✅ Footer с контактами
+
+### Интерактивные элементы:
+- 🤖 **AI-чат** с OpenAI GPT-4
+- 📧 **Форма контактов** с валидацией
+- 🖼️ **Галерея портфолио** с модальными окнами
+- ⭐ **Отзывы** с автоматической ротацией
+- ❓ **FAQ** с аккордеоном
+
+## 🛠️ Установка и запуск
+
+1. **Клонируйте репозиторий:**
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone <repository-url>
+cd lotos-landing
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. **Установите зависимости:**
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. **Настройте переменные окружения:**
+```bash
+cp env.example .env.local
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Заполните `.env.local`:
+```env
+OPENAI_API_KEY=your_openai_api_key
+RESEND_API_KEY=your_resend_api_key
+NEXT_PUBLIC_GA_ID=your_google_analytics_id
+NEXT_PUBLIC_YANDEX_METRICA_ID=your_yandex_metrica_id
+```
 
-## Learn More
+4. **Запустите в режиме разработки:**
+```bash
+npm run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+5. **Откройте в браузере:**
+```
+http://localhost:3000
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📦 Сборка для продакшена
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm run build
+npm start
+```
 
-## Deploy on Vercel
+## 🎯 SEO и производительность
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- ✅ **Мета-теги** и Open Graph
+- ✅ **Schema.org** разметка
+- ✅ **Sitemap.xml** и robots.txt
+- ✅ **Google Analytics 4**
+- ✅ **Яндекс.Метрика**
+- ✅ **Оптимизированные изображения**
+- ✅ **Lazy loading**
+- ✅ **Code splitting**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📊 Аналитика
+
+Отслеживаются события:
+- `click_cta` - клики по CTA кнопкам
+- `form_submit` - отправка форм
+- `chat_message_sent` - сообщения в AI-чате
+- `phone_click` - клики по телефону
+- `portfolio_view` - просмотр портфолио
+
+## 🎨 Кастомизация
+
+### Цветовая схема:
+```css
+--primary: #0052CC (глубокий синий)
+--accent: #00D4FF (киберголубой)
+--background: #0A0E27 (тёмный премиум)
+--text-primary: #FFFFFF
+--text-secondary: #E0E0E0
+```
+
+### Анимации:
+- Fade in/out
+- Slide up
+- Float
+- Cyber glow effects
+
+## 📱 Адаптивность
+
+- **Mobile**: 320px+
+- **Tablet**: 768px+
+- **Desktop**: 1024px+
+- **Large**: 1280px+
+
+## 🔧 API интеграции
+
+### OpenAI GPT-4
+- AI-чат консультант
+- Контекст о услугах ЛОтос
+- Сбор контактов
+
+### Resend API
+- Отправка заявок на email
+- Уведомления о новых лидах
+
+## 📈 Конверсия
+
+Лендинг оптимизирован для:
+- Получения заявок
+- Сбора контактов
+- Демонстрации экспертности
+- Построения доверия
+
+## 🚀 Деплой
+
+Рекомендуется деплой на:
+- **Vercel** (оптимально для Next.js)
+- **Netlify**
+- **Railway**
+
+## 📞 Контакты
+
+- **Телефон**: +7 (910) 123-45-67
+- **Email**: info@lotos-ryazan.ru
+- **Адрес**: г. Рязань, ул. Примерная, д. 123
+
+## 📄 Лицензия
+
+Все права защищены © 2024 ЛОтос
