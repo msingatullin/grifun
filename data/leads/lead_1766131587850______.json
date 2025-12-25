@@ -1,0 +1,14 @@
+{
+  "timestamp": "2025-12-19T08:06:27.848Z",
+  "type": "callback",
+  "name": "кпкпк",
+  "email": "кпкпу",
+  "phone": "кпкпу",
+  "service": "",
+  "planfix_status": 201,
+  "planfix_response": {
+    "result": "success",
+    "id": 18
+  },
+  "planfix_success": true
+}

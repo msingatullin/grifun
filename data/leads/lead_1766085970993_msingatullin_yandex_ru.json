@@ -1,0 +1,14 @@
+{
+  "timestamp": "2025-12-18T19:26:10.992Z",
+  "name": "Mikhail",
+  "company": "504904946152",
+  "email": "msingatullin@yandex.ru",
+  "task": "выыввывы",
+  "planfix_status": 400,
+  "planfix_response": {
+    "result": "fail",
+    "code": 30,
+    "error": "Cannot deserialize, invalid JSON"
+  },
+  "planfix_success": false
+}

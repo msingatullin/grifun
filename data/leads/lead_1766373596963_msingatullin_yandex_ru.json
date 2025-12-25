@@ -1,0 +1,14 @@
+{
+  "timestamp": "2025-12-22T03:19:56.961Z",
+  "type": "consultation",
+  "name": "притпа",
+  "email": "msingatullin@yandex.ru",
+  "service": "turnkey",
+  "task": "",
+  "planfix_status": 201,
+  "planfix_response": {
+    "result": "success",
+    "id": 22
+  },
+  "planfix_success": true
+}

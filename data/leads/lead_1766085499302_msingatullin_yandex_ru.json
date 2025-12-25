@@ -1,0 +1,14 @@
+{
+  "timestamp": "2025-12-18T19:18:19.301Z",
+  "name": "рыекрырыав",
+  "company": "аврыавр",
+  "email": "msingatullin@yandex.ru",
+  "task": "арвыар",
+  "planfix_status": 405,
+  "planfix_response": {
+    "result": "fail",
+    "code": 5,
+    "error": "Scope denied, method not allowed"
+  },
+  "planfix_success": false
+}

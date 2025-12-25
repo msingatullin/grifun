@@ -1,0 +1,23 @@
+[
+  {
+    "id": "ai-audit",
+    "label": "AI-аудит",
+    "public": true
+  },
+  {
+    "id": "poc",
+    "label": "Proof of Concept",
+    "public": true
+  },
+  {
+    "id": "turnkey",
+    "label": "Интеграции под ключ",
+    "public": true
+  },
+  {
+    "id": "support",
+    "label": "Поддержка 24/7",
+    "public": true
+  }
+]
+
