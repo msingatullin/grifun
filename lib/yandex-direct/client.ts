@@ -938,7 +938,7 @@ export class YandexDirectClient {
       // DisplayUrlPath: может содержать только буквы, цифры, символы /- № # %
       // Точка (.) НЕ разрешена! Используем только домен без точки или путь
       const displayUrl = 'grifun'; // Без точки, только домен
-      const href = 'https://grifun.ru';
+      const href = 'https://www.grifun.ru';
 
       // Функция для подсчета "узких" символов
       const countNarrowChars = (str: string): number => {
@@ -1071,4 +1071,3 @@ export class YandexDirectClient {
     }
   }
 }
-

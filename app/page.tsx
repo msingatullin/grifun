@@ -1,44 +1,29 @@
-import Header from "@/components/Header";
-import Hero from "@/components/Hero";
-import ValueProposition from "@/components/ValueProposition";
-import Services from "@/components/Services";
-import Cases from "@/components/Cases";
-import TypicalResults from "@/components/TypicalResults";
-import About from "@/components/About";
-import Documents from "@/components/Documents";
-import TransparentDeal from "@/components/TransparentDeal";
-import TrustBlock from "@/components/TrustBlock";
-import FAQ from "@/components/FAQ";
-import Process from "@/components/Process";
-import Contact from "@/components/Contact";
-import Footer from "@/components/Footer";
-import { loadDocuments } from "@/lib/docs/types";
-import { loadServices } from "@/lib/services/types";
+import Hero from "../src/components/Hero";
+import Benefits from "../src/components/Benefits";
+import Problems from "../src/components/Problems";
+import HowItWorks from "../src/components/HowItWorks";
+import Portfolio from "../src/components/Portfolio";
+import Pricing from "../src/components/Pricing";
+import Testimonials from "../src/components/Testimonials";
+import FAQ from "../src/components/FAQ";
+import ContactForm from "../src/components/ContactForm";
+import Footer from "../src/components/Footer";
+import AIChat from "../src/components/AIChat";
 
-export default async function Home({
-  searchParams,
-}: {
-  searchParams: { service?: string };
-}) {
-  const documents = await loadDocuments();
-  const services = await loadServices();
-
+export default function Home() {
   return (
-    <main className="min-h-screen bg-background">
-      <Header />
+    <main className="min-h-screen">
       <Hero />
-      <ValueProposition />
-      <Services />
-      <Cases />
-      <TypicalResults />
-      <TrustBlock />
-      <About />
-      <Documents documents={documents} />
-      <TransparentDeal />
-      <Process />
+      <Benefits />
+      <Problems />
+      <HowItWorks />
+      <Portfolio />
+      <Pricing />
+      <Testimonials />
       <FAQ />
-      <Contact services={services} initialService={searchParams.service} />
+      <ContactForm />
       <Footer />
+      <AIChat />
     </main>
   );
 }

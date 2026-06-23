@@ -10,14 +10,13 @@ export default function SEO() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
-            "name": "ЛОтос",
-            "description": "Профессиональные системы видеонаблюдения и СКС ЛВС в Рязани",
-            "url": "https://lotos-ryazan.ru",
-            "telephone": "+7 (910) 123-45-67",
-            "email": "info@lotos-ryazan.ru",
+            "name": "Грифон",
+            "description": "Профессиональные системы видеонаблюдения, СКС и СКУД в Рязани",
+            "url": "https://www.grifun.ru",
+            "telephone": "+7 (915) 108-89-98",
+            "email": "info@grifun.ru",
             "address": {
               "@type": "PostalAddress",
-              "streetAddress": "ул. Примерная, д. 123",
               "addressLocality": "Рязань",
               "addressCountry": "RU"
             },
@@ -41,9 +40,9 @@ export default function SEO() {
                   "itemOffered": {
                     "@type": "Service",
                     "name": "Монтаж видеонаблюдения",
-                    "description": "Установка систем видеонаблюдения за 7 дней"
+                    "description": "Установка систем видеонаблюдения под ключ"
                   },
-                  "price": "25000",
+                  "price": "15000",
                   "priceCurrency": "RUB"
                 },
                 {
@@ -73,16 +72,16 @@ export default function SEO() {
       <meta name="msapplication-TileColor" content="#0052CC" />
       
       {/* Open Graph */}
-      <meta property="og:site_name" content="ЛОтос - Видеонаблюдение в Рязани" />
-      <meta property="og:image" content="https://lotos-ryazan.ru/og-image.jpg" />
+      <meta property="og:site_name" content="Грифон - Видеонаблюдение в Рязани" />
+      <meta property="og:image" content="https://www.grifun.ru/og-image.jpg" />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
       
       {/* Twitter Card */}
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content="ЛОтос - Видеонаблюдение и СКС ЛВС в Рязани" />
-      <meta name="twitter:description" content="Профессиональный монтаж видеонаблюдения за неделю. Облачное хранение, контроль со смартфона 24/7." />
-      <meta name="twitter:image" content="https://lotos-ryazan.ru/og-image.jpg" />
+      <meta name="twitter:title" content="Грифон - Видеонаблюдение в Рязани" />
+      <meta name="twitter:description" content="Профессиональный монтаж видеонаблюдения в Рязани и области." />
+      <meta name="twitter:image" content="https://www.grifun.ru/og-image.jpg" />
     </Head>
   )
 }

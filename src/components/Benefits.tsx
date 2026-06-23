@@ -26,20 +26,20 @@ const benefits = [
 
 export default function Benefits() {
   return (
-    <section className="py-20 bg-background-secondary/30">
+    <section id="benefits" className="py-20 bg-background-secondary/30">
       <div className="container mx-auto px-4">
-        <motion.div
+          <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
           className="text-center mb-16"
-        >
+          >
           <h2 className="text-3xl md:text-4xl font-bold text-text-primary mb-4">
-            Почему выбирают <span className="gradient-text">ЛОтос</span>
+            Почему выбирают <span className="gradient-text">Грифон</span>
           </h2>
           <p className="text-xl text-text-secondary max-w-2xl mx-auto">
-            Мы обеспечиваем полный цикл услуг от проектирования до технической поддержки
+            Мы делаем видеонаблюдение под ключ: от проекта до обслуживания
           </p>
         </motion.div>
 
