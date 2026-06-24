@@ -17,11 +17,11 @@ export default function Footer() {
             className="lg:col-span-2"
           >
             <h3 className="text-2xl font-bold text-text-primary mb-4">
-              <span className="gradient-text">Грифон</span>
+              <span className="gradient-text">ЛОтос</span>
             </h3>
             <p className="text-text-secondary mb-6 leading-relaxed">
-              Профессиональный монтаж видеонаблюдения, СКС и СКУД в Рязани.
-              Проектирование, установка и обслуживание под ключ.
+              Профессиональные системы видеонаблюдения и СКС ЛВС в Рязани. 
+              Монтаж за неделю, облачное хранение, контроль 24/7.
             </p>
             
             {/* Contact Info */}
@@ -29,31 +29,31 @@ export default function Footer() {
               <div className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-accent" />
                 <a 
-                  href="tel:+79151088998" 
+                  href="tel:+79101234567" 
                   className="text-text-secondary hover:text-accent transition-colors"
                 >
-                  +7 (915) 108-89-98
+                  +7 (910) 123-45-67
                 </a>
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-accent" />
                 <a 
-                  href="mailto:info@grifun.ru" 
+                  href="mailto:info@lotos-ryazan.ru" 
                   className="text-text-secondary hover:text-accent transition-colors"
                 >
-                  info@grifun.ru
+                  info@lotos-ryazan.ru
                 </a>
               </div>
               <div className="flex items-center gap-3">
                 <MapPin className="w-5 h-5 text-accent" />
                 <span className="text-text-secondary">
-                  г. Рязань
+                  г. Рязань, ул. Примерная, д. 123
                 </span>
               </div>
               <div className="flex items-center gap-3">
                 <Clock className="w-5 h-5 text-accent" />
                 <span className="text-text-secondary">
-                  Пн-Пт: 9:00-18:00
+                  Пн-Пт: 9:00-18:00, Сб: 10:00-16:00
                 </span>
               </div>
             </div>
@@ -148,7 +148,7 @@ export default function Footer() {
         >
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-text-muted text-sm">
-              © {new Date().getFullYear()} Грифон. Все права защищены.
+              © 2024 ЛОтос. Все права защищены.
             </div>
             
             <div className="flex gap-6 text-sm">

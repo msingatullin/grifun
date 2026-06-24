@@ -8,7 +8,7 @@ const steps = [
     number: "01",
     icon: MessageCircle,
     title: "Консультация",
-    description: "Звонок или заявка для определения задач и объекта",
+    description: "Звонок или AI-чат для определения ваших потребностей",
     color: "bg-blue-500"
   },
   {
@@ -36,7 +36,7 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section id="how-it-works" className="py-20 bg-background-secondary/30">
+    <section className="py-20 bg-background-secondary/30">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -49,7 +49,7 @@ export default function HowItWorks() {
             Как это <span className="gradient-text">работает</span>
           </h2>
           <p className="text-xl text-text-secondary max-w-2xl mx-auto">
-            Простой процесс от заявки до запуска системы видеонаблюдения
+            Простой процесс от заявки до запуска системы
           </p>
         </motion.div>
 

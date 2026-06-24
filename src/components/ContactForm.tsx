@@ -5,6 +5,7 @@ import { useState } from 'react'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
+import { Select } from '@/components/ui/select'
 import { validateEmail, validatePhone } from '@/lib/utils'
 
 const objectTypes = [
@@ -121,7 +122,7 @@ export default function ContactForm() {
   }
 
   return (
-    <section id="contact" className="py-20 bg-background-secondary/30">
+    <section className="py-20 bg-background-secondary/30">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -207,12 +208,12 @@ export default function ContactForm() {
                 <label htmlFor="objectType" className="block text-sm font-medium text-text-primary mb-2">
                   Тип объекта *
                 </label>
-                <select
+                <Select
                   id="objectType"
                   name="objectType"
                   value={formData.objectType}
                   onChange={handleChange}
-                  className={`w-full rounded-lg border border-primary/20 bg-background-secondary/50 px-3 py-2 text-sm text-text-primary focus:outline-none focus:ring-2 focus:ring-accent/50 ${errors.objectType ? 'border-red-500' : ''}`}
+                  className={errors.objectType ? 'border-red-500' : ''}
                 >
                   <option value="">Выберите тип объекта</option>
                   {objectTypes.map((type) => (
@@ -220,7 +221,7 @@ export default function ContactForm() {
                       {type}
                     </option>
                   ))}
-                </select>
+                </Select>
                 {errors.objectType && (
                   <p className="text-red-400 text-sm mt-1">{errors.objectType}</p>
                 )}

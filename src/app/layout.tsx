@@ -1,33 +1,26 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Analytics from "@/components/Analytics";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.grifun.ru"),
-  title: "Монтаж видеонаблюдения в Рязани под ключ — цены от 15 000 ₽ | Грифон",
-  description:
-    "Установка систем видеонаблюдения в Рязани и области: IP-камеры, СКС, СКУД, сигнализация. Работаем с 2015 года. Гарантия 2 года. Бесплатный выезд инженера.",
-  keywords:
-    "видеонаблюдение Рязань, монтаж видеонаблюдения, ip камеры, СКС, СКУД, охранная сигнализация, установка камер, Рязань, Грифон",
-  authors: [{ name: "Грифон" }],
-  creator: "Грифон",
-  publisher: "Грифон",
-  alternates: {
-    canonical: "/",
-  },
+  title: "ЛОтос - Видеонаблюдение и СКС ЛВС в Рязани",
+  description: "Профессиональный монтаж видеонаблюдения за неделю. Облачное хранение, контроль со смартфона 24/7. СКС ЛВС системы в Рязани.",
+  keywords: "видеонаблюдение, СКС ЛВС, монтаж, Рязань, камеры, безопасность, облачное хранение, контроль доступа",
+  authors: [{ name: "ЛОтос" }],
+  creator: "ЛОтос",
+  publisher: "ЛОтос",
   openGraph: {
-    title: "Монтаж видеонаблюдения в Рязани под ключ | Грифон",
-    description:
-      "Установка IP-камер, СКС и систем контроля доступа в Рязани и области. Гарантия 2 года. Бесплатный выезд инженера.",
+    title: "ЛОтос - Видеонаблюдение и СКС ЛВС в Рязани",
+    description: "Профессиональный монтаж видеонаблюдения за неделю. Облачное хранение, контроль со смартфона 24/7.",
     type: "website",
     locale: "ru_RU",
-    url: "https://www.grifun.ru",
-    siteName: "Грифон",
+    url: "https://lotos-ryazan.ru",
+    siteName: "ЛОтос",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Монтаж видеонаблюдения в Рязани под ключ | Грифон",
-    description:
-      "Установка систем видеонаблюдения в Рязани и области. Бесплатный выезд инженера, гарантия 2 года.",
+    title: "ЛОтос - Видеонаблюдение и СКС ЛВС в Рязани",
+    description: "Профессиональный монтаж видеонаблюдения за неделю. Облачное хранение, контроль со смартфона 24/7.",
   },
   robots: {
     index: true,
@@ -41,6 +34,7 @@ export const metadata: Metadata = {
     },
   },
   verification: {
+    google: "your-google-verification-code",
     yandex: "your-yandex-verification-code",
   },
 };
@@ -53,38 +47,13 @@ export default function RootLayout({
   return (
     <html lang="ru">
       <head>
-        <link rel="canonical" href="https://www.grifun.ru/" />
+        <link rel="canonical" href="https://lotos-ryazan.ru" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#0052CC" />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "LocalBusiness",
-              name: "Грифон",
-              description:
-                "Профессиональный монтаж видеонаблюдения, СКС, СКУД и охранной сигнализации в Рязани и области.",
-              url: "https://www.grifun.ru/",
-              telephone: "+7 (915) 108-89-98",
-              email: "info@grifun.ru",
-              address: {
-                "@type": "PostalAddress",
-                addressLocality: "Рязань",
-                addressRegion: "Рязанская область",
-                addressCountry: "RU",
-              },
-              areaServed: [
-                "Рязань",
-                "Рязанская область",
-              ],
-              priceRange: "15000-200000 RUB",
-              sameAs: [],
-            }),
-          }}
-        />
       </head>
       <body className="antialiased">
         {children}
+        <Analytics />
       </body>
     </html>
   );

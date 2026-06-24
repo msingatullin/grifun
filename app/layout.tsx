@@ -1,48 +1,13 @@
 import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
+const inter = Inter({ subsets: ["latin", "cyrillic"] });
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.grifun.ru"),
-  title: "Монтаж видеонаблюдения в Рязани под ключ — цены от 15 000 ₽ | Грифон",
-  description:
-    "Установка систем видеонаблюдения в Рязани и области: IP-камеры, СКС, СКУД, сигнализация. Работаем с 2015 года. Гарантия 2 года. Бесплатный выезд инженера.",
-  keywords:
-    "видеонаблюдение Рязань, монтаж видеонаблюдения, ip камеры, СКС, СКУД, охранная сигнализация, установка камер, Рязань, Грифон",
-  authors: [{ name: "Грифон" }],
-  creator: "Грифон",
-  publisher: "Грифон",
-  alternates: {
-    canonical: "/",
-  },
-  openGraph: {
-    title: "Монтаж видеонаблюдения в Рязани под ключ | Грифон",
-    description:
-      "Установка IP-камер, СКС и систем контроля доступа в Рязани и области. Гарантия 2 года. Бесплатный выезд инженера.",
-    type: "website",
-    locale: "ru_RU",
-    url: "https://www.grifun.ru",
-    siteName: "Грифон",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Монтаж видеонаблюдения в Рязани под ключ | Грифон",
-    description:
-      "Установка систем видеонаблюдения в Рязани и области. Бесплатный выезд инженера, гарантия 2 года.",
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
-  },
-  verification: {
-    yandex: "your-yandex-verification-code",
-  },
+  title: "AI Automation Agency - Внедрение ИИ в бизнес-процессы",
+  description: "Автономные агенты, умные чат-боты и комплексная автоматизация. Сокращаем расходы и масштабируем операции 24/7.",
 };
 
 export default function RootLayout({
@@ -52,34 +17,36 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ru">
-      <head>
-        <link rel="canonical" href="https://www.grifun.ru/" />
-        <meta name="theme-color" content="#0052CC" />
-        <script
-          type="application/ld+json"
+      <body className={inter.className}>
+        {children}
+        {/* Yandex.Metrika counter */}
+        <Script
+          id="yandex-metrika"
+          strategy="afterInteractive"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "LocalBusiness",
-              name: "Грифон",
-              description:
-                "Профессиональный монтаж видеонаблюдения, СКС, СКУД и охранной сигнализации в Рязани и области.",
-              url: "https://www.grifun.ru/",
-              telephone: "+7 (915) 108-89-98",
-              email: "info@grifun.ru",
-              address: {
-                "@type": "PostalAddress",
-                addressLocality: "Рязань",
-                addressRegion: "Рязанская область",
-                addressCountry: "RU",
-              },
-              areaServed: ["Рязань", "Рязанская область"],
-              priceRange: "15000-200000 RUB",
-            }),
+            __html: `
+              (function(m,e,t,r,i,k,a){
+                m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+                m[i].l=1*new Date();
+                for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+                k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+              })(window, document,'script','https://mc.yandex.ru/metrika/tag.js', 'ym');
+              ym(98098295, 'init', {webvisor:true, trackHash:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});
+            `,
           }}
         />
-      </head>
-      <body>{children}</body>
+        <noscript>
+          <div>
+            <img
+              src="https://mc.yandex.ru/watch/98098295"
+              style={{ position: "absolute", left: "-9999px" }}
+              alt=""
+            />
+          </div>
+        </noscript>
+        {/* /Yandex.Metrika counter */}
+      </body>
     </html>
   );
 }
+

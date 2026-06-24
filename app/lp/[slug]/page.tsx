@@ -46,7 +46,7 @@ export async function generateMetadata({ params, searchParams }: LandingPageProp
   }
 
   // Формируем canonical URL
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.grifun.ru";
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://grifun.ru";
   const canonical = `${baseUrl}/lp/${slug}`;
 
   return {
@@ -114,3 +114,4 @@ export default async function LandingPageBySlug({
     </>
   );
 }
+
