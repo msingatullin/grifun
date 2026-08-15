@@ -1,9 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
@@ -39,6 +39,12 @@ module.exports = {
           secondary: "#1A1F3A",
           tertiary: "#2A2F4A",
         },
+        foreground: {
+          DEFAULT: "#FFFFFF",
+        },
+        "accent-blue": "#3B82F6",
+        "accent-indigo": "#6366F1",
+        "accent-purple": "#8B5CF6",
         text: {
           primary: "#FFFFFF",
           secondary: "#E0E0E0",
